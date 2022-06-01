@@ -22,12 +22,12 @@ except Exception:
 		cls()
 	wait = lambda: getch.getch()
 else:
-	wait=lambda: msvcrt.getch()
+	wait = lambda: msvcrt.getch()
 def b(z):
 	while True:
 		cls()
 		input(f'\nERROR: {z}')
-if len(m)!=len(r):
+if len(m) != len(r):
 	b(f'There are {len(m)} questions, but {len(r)} correct answers stored.')
 print(f'''\n                                                      ,---,\n                                                    ,`--.' |\n    ,----..                                         |   :  :\n   /   /   \                    ,--,                '   '  ;\n  /   .     :            ,--, ,--.'|          ,----,|   |  |\n .   /   ;.  \         ,'_ /| |  |,         .'   .`|'   :  ;\n.   ;   /  ` ;    .--. |  | : `--'_      .'   .'  .'|   |  '\n;   |  ; \ ; |  ,'_ /| :  . | ,' ,'|   ,---, '   ./ '   :  |\n|   :  | ; | '  |  ' | |  . . '  | |   ;   | .'  /  ;   |  ;\n.   |  ' ' ' :  |  | ' |  | | |  | :   `---' /  ;--,`---'. |\n'   ;  \; /  |  :  | : ;  ; | '  : |__   /  /  / .`| `--..`;\n \   \  ',  . \ '  :  `--'   \|  | '.'|./__;     .' .--,_\n  ;   :      ; |:  ,      .-./;  :    ;;   |  .'    |    |`.\n   \   \ .~`--'  `--`----`    |  ,   / `---'        '----`,;\n    `---`                      ---`-                 ---"\n\n"Pokémon: Let's GO, Eevee! Quiz" by TurnipGuy30. Repo located at [https://github.com/TurnipGuy30/LGPE-Quiz].\n\nInstructions:\nT = Text; type your answer\nMC = Multiple Choise; type a/b/c/d\nT/F = True or False; type t/f\nINT = Integer Answer; type the number\n\nThere are {len(m)} questions\nWorded questions are not case-sensitive\nPoints are revealed at the end!\n\nPress any key to begin.''')
 wait()
